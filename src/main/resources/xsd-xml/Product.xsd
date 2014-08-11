@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://example.com/products"
+            xmlns="http://example.com/products">
+    <xsd:include schemaLocation="ProductTypes.xsd"/>
+    <xsd:include schemaLocation="ProductValue.xsd"/>
+
+    <xsd:complexType name="Product">
+        <xsd:sequence>
+            <xsd:element name="name" type="productTypes"/>
+            <xsd:element name="calories" type="xsd:integer"/>
+            <xsd:element name="fat_percentage" type="xsd:integer"/>
+            <xsd:element name="price" type="xsd:decimal"/>
+            <xsd:element name="value" type="productValue"/>
+            <xsd:element name="production" type="xsd:string"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>

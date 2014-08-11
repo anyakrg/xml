@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://example.com/products"
+            xmlns="http://example.com/products">
+
+    <xsd:simpleType name="productTypes">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="MILK"/>
+            <xsd:enumeration value="CHEESE"/>
+            <xsd:enumeration value="KEFIR"/>
+            <xsd:enumeration value="COTTAGECHEESE"/>
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema>

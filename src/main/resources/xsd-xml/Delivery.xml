@@ -1,0 +1,15 @@
+<prod:delivery xmlns:prod="http://example.com/products">
+  <!--1 or more repetitions:-->
+  <product>
+    <name>KEFIR</name>
+    <calories>100</calories>
+    <fat_percentage>100</fat_percentage>
+    <price>1000.00</price>
+    <value>
+        <protein>1000.00</protein>
+        <fat>1000.00</fat>
+        <carbohydrates>1000.00</carbohydrates>
+    </value>
+    <production>string</production>
+  </product>
+</prod:delivery>

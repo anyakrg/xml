@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://example.com/products"
+            xmlns="http://example.com/products">
+    <xsd:include schemaLocation="Product.xsd"/>
+
+    <xsd:element name="delivery" type="ProductList"/>
+    <xsd:complexType name="ProductList">
+        <xsd:sequence>
+            <xsd:element name="product" type="Product" minOccurs="1" maxOccurs="unbounded"/>
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
